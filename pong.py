@@ -31,13 +31,16 @@ while again:
     if ball.left <= 0 or ball.right >= width:
         ball_speed_x *= -1
         
-    if ball.left == player.right and ball in :
+    if ball in player:
         ball_speed_x *= -1
         ball_speed_y *= -1
         
-    if ball.right == op.left:
+    if ball in op:
         ball_speed_x *= -1
         ball_speed_y *= -1
+    
+    if ball.x >> player.x:
+        
         
     key = pygame.key.get_pressed()
     
