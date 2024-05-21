@@ -11,8 +11,8 @@ ball = pygame.Rect(width/2 - 15, hight/2 - 15, 10, 10)
 player = pygame.Rect(200, 510, 10, 50)
 op = pygame.Rect(1720, 510, 10, 50)
 
-ball_speed_x = 1
-ball_speed_y = 1
+ball_speed_x = .45
+ball_speed_y = .45
 
 screen = pygame.display.set_mode((width, hight))
 
@@ -39,7 +39,6 @@ while again:
         ball_speed_x *= -1
         ball_speed_y *= -1
     
-    if ball.x >> player.x:
         
         
     key = pygame.key.get_pressed()
